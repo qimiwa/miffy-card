@@ -1,0 +1,73 @@
+body {
+    font-family: "Comic Sans MS", sans-serif;
+    background-color: #fefefe;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .card-container {
+    width: 90%;
+    max-width: 400px;
+    border: 4px solid #2878bd;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #faccd9;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: transform 0.5s ease;
+    cursor: pointer;
+  }
+  
+  .card-front {
+    animation: float 2s ease-in-out infinite;
+  }
+  
+  .card-inside {
+    display: none;
+  }
+  
+  .card-inside.visible {
+    display: block;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .miffy-img {
+    width: 100px;
+    margin-top: 10px;
+  }
+  
+  button {
+    font-family: "Comic Sans MS", sans-serif;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #957dad;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #d291bc;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+  
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  
